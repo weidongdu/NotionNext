@@ -114,7 +114,7 @@ const LayoutBase = props => {
         </div>
 
         {/* 右下角悬浮 */}
-        <RightFloatButtons {...props} floatRightBottom={floatRightBottom} />
+        {/*<RightFloatButtons {...props} floatRightBottom={floatRightBottom} />*/}
 
         {/* 全文搜索 */}
         <AlgoliaSearchModal cRef={searchModal} {...props} />
