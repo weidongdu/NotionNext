@@ -7,52 +7,51 @@
 const Style = () => {
   return (
     <style jsx global>{`
-        // 底色
-        body {
-            background-color: #f5f5f5;
-        }
+      // 底色
+      body {
+        background-color: #f5f5f5;
+      }
+      .dark body {
+        background-color: black;
+      }
 
-        .dark body {
-            background-color: black;
-        }
+      /* 设置了从上到下的渐变黑色 */
+      #theme-matery .header-cover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.2) 10%,
+          rgba(0, 0, 0, 0) 25%,
+          rgba(0, 0, 0, 0.2) 75%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+      }
 
-        /* 设置了从上到下的渐变黑色 */
-        #theme-matery .header-cover::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                    to bottom,
-                    rgba(0, 0, 0, 0.5) 0%,
-                    rgba(0, 0, 0, 0.2) 10%,
-                    rgba(0, 0, 0, 0) 25%,
-                    rgba(0, 0, 0, 0.2) 75%,
-                    rgba(0, 0, 0, 0.5) 100%
-            );
-        }
+      // 自定义滚动条
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
 
-        // 自定义滚动条
-        ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
 
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
+      ::-webkit-scrollbar-thumb {
+        //background-color: #4338ca;
+        background-color: #4338ca;
+      }
 
-        ::-webkit-scrollbar-thumb {
-            //background-color: #4338ca;
-            background-color: rgba(239, 202, 80, 0.8);
-        }
-
-        * {
-            scrollbar-width: thin;
-            scrollbar-color: rgba(239, 202, 80, 0.8) transparent;
-        }
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #4338ca transparent;
+      }
     `}</style>
   )
 }
