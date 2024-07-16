@@ -158,6 +158,7 @@ function AsideLeft(props) {
 
         <section>
           <MailChimpForm />
+          <DarkModeButton />
         </section>
 
         <section>
