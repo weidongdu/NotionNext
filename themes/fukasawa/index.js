@@ -286,9 +286,9 @@ const LayoutTagIndex = props => {
 
 export {
   Layout404,
-  LayoutArchive,
+  // LayoutArchive,
   LayoutBase,
-  LayoutCategoryIndex,
+  // LayoutCategoryIndex,
   LayoutIndex,
   LayoutPostList,
   LayoutSearch,
