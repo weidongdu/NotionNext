@@ -187,7 +187,7 @@ function AsideLeft(props) {
           <SiteInfo />
         </section>
 
-        <section className='flex justify-center dark:text-gray-200 pt-4'>
+        <section className='flex flex-row items-center justify-center dark:text-gray-200 pt-4'>
           <DarkModeButton />
         </section>
 
