@@ -51,7 +51,7 @@ const Footer = ({ title }) => {
           <a
             href='https://github.com/tangly1024/NotionNext'
             className='underline dark:text-gray-300'>
-            NotionNext {siteConfig('VERSION')}
+            NotionNext
           </a>
           .
         </span>
